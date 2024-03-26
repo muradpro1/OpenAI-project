@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(255, 254, 254) !important ;
+    background-color: black;
+}
+main{
+    color: white !important;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: white;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-heading{
+    font-size: 70px;
+}
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.first {
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+    margin-left: 120px;
+}
+.hero-link{
+    padding: 5px;
+    font-size: 20px;
+}
+.link{
+    cursor: pointer;
+}
+.second {
+    margin-left: 400px;
+    display: flex;
+    gap: 10px;
+}
+.icon-container{
+    margin-left: 20px;
+}
+
+.link{
+    font-size: 20px;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.special{
+    border: 2px white solid;
+    border-radius: 5px;
+    text-decoration: none !important;
+    background-color: transparent;
+    color: white;
+}
+.special:hover{
+    background-color: white;
+    color: black;
+}
+/* Second section */
+.links{
+    width: 100%;
+    background-color: black;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+a{
+    max-width: 400px;
+    text-decoration: none;
+}
+.underlined-text,.link-heading{
+    font-size: 30px;
+}
+.underlined-text{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.underlined-text:hover{
+    text-decoration: none;
+}
+.button{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+.updates-header, .products-header{
+    display: flex;
+    justify-content: space-between;
+}
+.updates-cards , .products-cards{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 24px;
+}
+.updates-link  , .products-link{
+    text-decoration: underline;
+}
+.card{
+    background-color: black;
+}
+.card-text{
+    color: white;
+}
+.second-heading{
+   
+}
+.card:hover{
+    .second-heading{
+        text-decoration: underline;
+    }
+    cursor: pointer;
+}
+.Quotas{
+    display: flex;
+    overflow-x: hidden !important;
+    width: 100%;
+
+}
+.Quotas-image{
+    height: 700px;
+    object-fit: cover;
+}
+.text{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin-left: 50px;
+    font-family: "Signifier", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2rem;
+}
+.text h2{
+    font-size: 50px;
+}
+.join_us{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.join_us h1{
+    font-size: 60px;
+}
+.join_us-button{
+    display: flex;
+    justify-content: center;
+}
+
