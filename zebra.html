@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hehe</h1>
+    <section class="lines-js"></section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+  const linesContainer = document.querySelector('.lines-js')
+  let whiteHeight = 0
+  let blackHeight = 20
+
+  function createZebra(wh, bh) {
+    console.log('here', wh, bh);
+    const markup = `
+      <div class="zebra">
+        <p class="white" style="height: ${wh}px"></p>
+        <p class="black" style="height: ${bh}px"></p>
+      </div>
+    `
+    linesContainer.insertAdjacentHTML('beforeend', markup)
+  }
+  
+  for(let i = 0; i < 20; i++) {
+    whiteHeight++
+    blackHeight--
+    createZebra(whiteHeight, blackHeight)
+  }  
+</script>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .lines-js {
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .zebra > .white {
+    background-color: white;
+  }
+  .zebra > .black {
+    background-color: black;
+  }
+</style>
